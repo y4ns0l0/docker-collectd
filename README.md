@@ -6,23 +6,24 @@ An all-in-one image
 * [**collectd**](https://github.com/collectd/collectd) 5.5.1
 
 All collectd directories are located in `/opt/collectd`. Default config file is `/opt/collectd/etc/collectd.conf`
-`collectd` and `collectd` are added in $PATH
+
+`collectd` and `collectd` are added in PATH env
 
 Usage
 -----
 
 Get help :
 
-    docker run --rm  y4ns0l0/collectd:5.5.1 collectd -h
+    docker run --rm  y4ns0l0/collectd collectd -h
 
 Running collectd in deamon mode with specifed configuration file :
 
-    docker run -d y4ns0l0/collectd:5.5.1\
+    docker run -d y4ns0l0/collectd\
      collectd -f -C /tmp/testConfig.conf
 
 Put your config file in data volume and use it :
 
-    docker run -d y4ns0l0/collectd:5.5.1\
+    docker run -d y4ns0l0/collectd\
      -v /data/collectd:/opt/collectd/etc\
      collectd -f
 
