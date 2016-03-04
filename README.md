@@ -31,7 +31,8 @@ Plugins
 
 This is a basic compilation of collectd sources, I just add `libsnmp-dev` for personnal needs, so [collectd-snmp](https://collectd.org/documentation/manpages/collectd-snmp.5.shtml) is enabled.
 
-```Here is a list of compiled plugins :
+```
+Here is a list of compiled plugins :
 
   Modules:
     aggregation . . . . . yes
