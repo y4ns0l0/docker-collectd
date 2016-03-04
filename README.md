@@ -168,7 +168,8 @@ Here is a list of compiled plugins :
     write_tsdb  . . . . . yes
     xmms  . . . . . . . . no
     zfs_arc . . . . . . . yes
-    zookeeper . . . . . . yes```
+    zookeeper . . . . . . yes
+```
 
 
 License
