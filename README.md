@@ -13,20 +13,21 @@ Usage
 -----
 
 Get help :
-
-    docker run --rm  y4ns0l0/collectd collectd -h
+```bash
+docker run --rm  y4ns0l0/collectd collectd -h
+```
 
 Running collectd in deamon mode with specifed configuration file :
-
+```bash
     docker run -d y4ns0l0/collectd\
      collectd -f -C /tmp/testConfig.conf
-
+```
 Put your config file in data volume and use it :
-
+```bash
     docker run -d y4ns0l0/collectd\
      -v /data/collectd:/opt/collectd/etc\
      collectd -f
-
+```
 Plugins
 -------
 
