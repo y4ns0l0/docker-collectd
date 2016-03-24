@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -y update && apt-get -y install wget build-essential 
 
 # Install all dependencies for collectd plugins. Here we want collectd-snmp
-RUN apt-get -y install libsnmp-dev
+RUN apt-get -y install libsnmp-dev libperl-dev
 
 # Get and untar sources files
 RUN wget https://collectd.org/files/collectd-5.5.1.tar.gz

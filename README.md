@@ -31,7 +31,10 @@ Put your config file in data volume and use it :
 Plugins
 -------
 
-This is a basic compilation of collectd sources, I just add `libsnmp-dev` for personnal needs, so [collectd-snmp](https://collectd.org/documentation/manpages/collectd-snmp.5.shtml) is enabled.
+This is a basic compilation of collectd sources, I just add :
+
+* `libsnmp-dev` so [collectd-snmp](https://collectd.org/documentation/manpages/collectd-snmp.5.shtml) is enabled.
+* `libperl-dev` so [collectd-perl](https://collectd.org/documentation/manpages/collectd-perl.5.shtml) is enabled.
 
 ```
 Here is a list of compiled plugins :
@@ -113,7 +116,7 @@ Here is a list of compiled plugins :
     openldap  . . . . . . no
     openvpn . . . . . . . yes
     oracle  . . . . . . . no
-    perl  . . . . . . . . no (needs libperl)
+    perl  . . . . . . . . yes
     pf  . . . . . . . . . no
     pinba . . . . . . . . no
     ping  . . . . . . . . no
